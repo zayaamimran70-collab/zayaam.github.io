@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.CSS">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+    <nav class="Navbar">
+        <div class="LogoGroup">
+            <a id="LogoIcon" href="index.html"><img src="LogoIcon.png" alt="Logo"></a>
+            <a id="Logo" href="index.html">ZAYAAM.</a>
+        </div>
+
+        <div class="MenuIcon" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="Certifications.html">Certifications</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a id="Button" target="_blank" href="https://api.whatsapp.com/send?phone=923161689285&text=Hello%2C%20I%20visited%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20your%20front-end%20development%20services.%20Can%20we%20discuss%20a%20project%3F"><button>Let's talk</button></a>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <div class="AboutMe">
+            <h1 id="AboutMe"> About Me </h1>
+            <p id="Paragraph"> Hi, I’m Muhammad Zayaam Imran. I build interfaces that bridge the gap between human and machine.<br><br>
+
+For me, the front-end isn't just a layer of a stack it’s the most important part of the product. It's where the user lives. I specialize in building scalable, accessible, and performant web applications using the modern ecosystem of React/Vue/Next.js.<br><br>
+
+I’m the kind of developer who gets excited about clean folder structures, type safety, and reducing bundle sizes. I don't just follow trends; I look for tools that solve real problems. I’m currently focused on e.g., TypeScript and Headless UI to build systems that aren't just beautiful, but bulletproof.<br><br>
+
+When I’m not in VS Code: I’m likely chilling with my friends or hunting for the perfect cup of tea.<br>
+Beyond the technical implementation, I’m deeply invested in the 'why' behind the features. I approach every project with a product-driven mindset, asking how we can make things faster, more intuitive, and more inclusive. I don't just want to build a site that looks like the mockup; I want to build a tool that solves a problem and grows alongside its audience </p>
+        </div>
+    </main>
+        <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>

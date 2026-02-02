@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.CSS">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<header>
+    <nav class="Navbar">
+        <div class="LogoGroup">
+            <a id="LogoIcon" href="index.html"><img src="LogoIcon.png" alt="Logo"></a>
+            <a id="Logo" href="index.html">ZAYAAM.</a>
+        </div>
+
+        <div class="MenuIcon" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="Certifications.html">Certifications</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a id="Button" target="_blank" href="https://api.whatsapp.com/send?phone=923161689285&text=Hello%2C%20I%20visited%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20your%20front-end%20development%20services.%20Can%20we%20discuss%20a%20project%3F"><button>Let's talk</button></a>
+        </div>
+    </nav>
+</header>
+    <main>
+        <div class="Education">
+            <div id="Education-heading">
+                <h1>My Education</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Duration</th>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026-Present</td>
+                        <td>Bachelor of Computer Science ( AI )</td>
+                        <td>Lincoln University College Malaysia</td>
+                    </tr>
+                    <tr>
+                        <td>2024-2025</td>
+                        <td>Intermediate in Computer Science ( ICS )</td>
+                        <td>Punjab Group of Colleges <br><strong>Key Subjects:</strong> Computer Science, Mathematics, Programming Basics</td>
+                    </tr>
+                    <tr>
+                        <td>2026-Present</td>
+                        <td>Front-End Development</td>
+                        <td><strong>Skills Learned:</strong> HTML, CSS, JavaScript, Responsive Web Design, Git & GitHub<br>
+                        <strong>Online Learning:</strong> Coursera, FreeCodeCamp, YouTube Tutorials, Personal Projects
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+    </main>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>

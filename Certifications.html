@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.CSS">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+    <nav class="Navbar">
+        <div class="LogoGroup">
+            <a id="LogoIcon" href="index.html"><img src="LogoIcon.png" alt="Logo"></a>
+            <a id="Logo" href="index.html">ZAYAAM.</a>
+        </div>
+
+        <div class="MenuIcon" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="Certifications.html">Certifications</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a id="Button" target="_blank" href="https://api.whatsapp.com/send?phone=923161689285&text=Hello%2C%20I%20visited%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20your%20front-end%20development%20services.%20Can%20we%20discuss%20a%20project%3F"><button>Let's talk</button></a>
+        </div>
+    </nav>
+</header>
+  <main>  
+    <div class="Certifications">
+        <div id="Text">
+            <h1>My Certificates</h1>
+        </div>
+        <div id="Certificates">
+            <img src="Certificate1.png" alt="Certificate">
+            <img src="Certificate2.png" alt="Certificate">
+            <img src="Certificate3.png" alt="Certificate">
+        </div>
+    </div>
+  </main>  
+      <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>

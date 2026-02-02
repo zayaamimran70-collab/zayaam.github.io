@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.CSS">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+    <nav class="Navbar">
+        <div class="LogoGroup">
+            <a id="LogoIcon" href="index.html"><img src="LogoIcon.png" alt="Logo"></a>
+            <a id="Logo" href="index.html">ZAYAAM.</a>
+        </div>
+
+        <div class="MenuIcon" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="Certifications.html">Certifications</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a id="Button" target="_blank" href="https://api.whatsapp.com/send?phone=923161689285&text=Hello%2C%20I%20visited%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20your%20front-end%20development%20services.%20Can%20we%20discuss%20a%20project%3F"><button>Let's talk</button></a>
+        </div>
+    </nav>
+</header>
+
+<main>
+<div class="About">
+
+    <div class="About-text">
+        <h1 id="Name">Hi, I am Zayaam Imran !</h1><br>
+        <h2 id="Discipline">Front-End Developer</h2><br>
+        <p id="Description">
+            I'm a passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript. My work emphasizes clean code, proper layouts, and making websites easy to maintain and fast to load. I specialize in creating responsive and user-friendly websites that provide an excellent user experience.
+        </p><br>
+
+        <div class="Button-group">
+            <a id="Projects" href="https://github.com/zayaamimran70-collab?tab=projects"><button>Projects &lt;/&gt;</button></a>
+            <a id="Hireme" href="https://mail.google.com/mail/?view=cm&fs=1&to=zayaamimran70@gmail.com&su=Hiring%20Inquiry&body=I%20want%20to%20hire%20you.%0A%0AProject%20Details:%0A%0AMy%20WhatsApp%20:"><button>Hire me &phone;</button></a>
+        </div>
+
+        <div class="LogoLinks">
+            <a id="Instagram Logo" href="https://www.instagram.com/zayaam_009?igsh=MXdpM3pjeW5oZ2tq" target="_blank">
+                <img src="Instagram.png" alt="Instagram">
+            </a>
+            <a id="Facebook Logo" href="https://www.facebook.com/ziaam.imran9" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a id="Linkedin Logo" href="https://www.linkedin.com/in/zayaam-imran-436b59397/" target="_blank">
+                <img src="linkedin.png" alt="Linkedin">
+            </a>
+            <a id="Whatsapp Logo" href="https://api.whatsapp.com/send?phone=923161689285" target="_blank">
+                <img src="Whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
+    </div>
+
+    <div class="About-image">
+        <img src="Profile.png" alt="Profile Picture">
+    </div>
+
+</div>
+    </main>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>
